@@ -1,15 +1,38 @@
+.speech-bubble{
+  display: none;
+  margin-left: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1.5px rgb(47, 184, 138);
+}
+
+
+.robot{
+  width:auto;
+  height: 4rem;
+}
+
+.youtubelogo{
+  width:auto;
+  height: 5rem;
+}
 body {
-  font-family: 'Jua', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   background-color: #ffffff;
   box-sizing: border-box;
   color: #35465d;
 }
 .file-upload {
-    padding: 1% 1%;
-    margin: 0;
-    border-radius: 30px;
-    border: solid 1.5px #f6f7fa;
-    background-color: #f6f7fa;
+  padding: 15% 3%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 1.5px rgb(47, 184, 138);
+  background-color:  rgba(47, 184, 138,0.3);
 }
 .file-upload-btn {
   width: 100%;
@@ -58,15 +81,13 @@ body {
 }
 
 .image-upload-wrap {
-	display:inline-block;
-    width: 30%;
-	height:30%;
-    margin: 0 0;
-    position: relative;
-    object-fit: contain;
-    border-radius: 10px;
-    border: dashed 1.5px #35465d;
-    background-color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  object-fit: contain;
+  border-radius: 10px;
+  border: dashed 1.5px #35465d;
+  background-color: #ffffff;
 }
 
 .image-dropping,
@@ -117,8 +138,8 @@ h3{
 
 .try-again-btn {
   border-radius: 40px;
-  border: solid 1.5px #35465d;
-  background-color: #35465d;
+  border: solid 1.5px rgb(52, 71, 95);
+  background-color: rgb(52, 71, 95,0.3);
 }
 
 .try-again-text {
@@ -245,7 +266,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(117, 204, 84, 0.2);
+  background-color: rgba(208, 233, 70, 0.2);
 }
 .game-bar {
   position: absolute;
@@ -253,7 +274,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(117, 204, 84, 1);
+  background-color: rgba(208, 233, 70, 1);
 }
 .sports-box {
   position: absolute;
@@ -262,7 +283,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(27, 175, 234, 0.2);
+  background-color: rgb(234, 144, 27,0.2);
 }
 .sports-bar {
   position: absolute;
@@ -270,7 +291,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(27, 175, 234, 1);
+  background-color: rgb(234, 144, 27);
 }
 .vlog-box {
   position: absolute;
@@ -279,7 +300,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(251, 176, 59, 0.2);
+  background-color: rgba(81, 171, 212, 0.2);
 }
 .vlog-bar {
   position: absolute;
@@ -287,7 +308,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(251, 176, 59, 1);
+  background-color: rgba(81, 171, 212, 1);
 }
 .fashion-box {
   position: absolute;
@@ -296,7 +317,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(195, 140, 102, 0.2);
+  background-color: rgba(196, 80, 157, 0.2);
 }
 .fashion-bar {
   position: absolute;
@@ -304,7 +325,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(195, 140, 102, 1);
+  background-color: rgba(196, 80, 157, 0.966);
 }
 .economy-box {
   position: absolute;
@@ -313,7 +334,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(49, 132, 155, 0.2);
+  background-color: rgba(165, 116, 60, 0.2);
 }
 .economy-bar {
   position: absolute;
@@ -321,7 +342,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(49, 132, 155, 1);
+  background-color: rgba(165, 116, 60, 1);
 }
 .tech-box {
   position: absolute;
@@ -330,7 +351,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(235, 166, 190, 0.2);
+  background-color: rgba(47, 152, 184, 0.2);
 }
 .tech-bar {
   position: absolute;
@@ -338,7 +359,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(235, 166, 190, 1);
+  background-color: rgba(47, 152, 184, 1);
 }
 
 .food-box {
@@ -348,7 +369,7 @@ h3{
   height: 2rem;
   border-radius: 10px;
   width: 100%;
-  background-color: rgba(255, 148, 54, 0.2);
+  background-color: rgba(255, 168, 54, 0.2);
 }
 .food-bar {
   position: absolute;
@@ -356,7 +377,7 @@ h3{
   left: 0;
   height: 2rem;
   border-radius: 10px;
-  background-color: rgba(255, 148, 54, 1);
+  background-color: rgba(255, 168, 54, 1);
 }
 .percent-text {
   font-size: 1rem;
@@ -398,13 +419,25 @@ h3{
     color: #3ba363;
     font-size: 1rem;
 }
+.comedy-related-warn{
+  color: #3ba363;
+  font-size: 1rem;
+}
+
+
 .game-animal-title {
-    color: #3ba363;
+    color: rgba(208, 233, 70, 0.87);
 }
 .game-animal-celeb {
-    color: #3ba363;
+    color: rgba(208, 233, 70, 0.87);
     font-size: 1rem;
 }
+.game-related-warn{
+  color: rgba(208, 233, 70, 0.87);
+  font-size: 1rem;
+}
+
+
 .sports-animal-title {
     color: #ff6c0a;
 }
@@ -412,6 +445,13 @@ h3{
     color: #ff6c0a;
     font-size: 1rem;
 }
+.sports-related-warn{
+  color: #ff6c0a;
+  font-size: 1rem;
+}
+
+
+
 .vlog-animal-title {
     color: #548dd4;
 }
@@ -419,13 +459,27 @@ h3{
     color: #548dd4;
     font-size: 1rem;
 }
+.vlog-related-warn{
+  color: #548dd4;
+  font-size: 1rem;
+}
+
+
 .fashion-animal-title {
     color: #e56995;
 }
+
 .fashion-animal-celeb {
     color: #e56995;
     font-size: 1rem;
 }
+.fashion-related-warn{
+  color: #e56995;
+  font-size: 1rem;
+}
+
+
+
 .economy-animal-title {
     color: #9b6b43;
 }
@@ -433,6 +487,13 @@ h3{
     color: #9b6b43;
     font-size: 1rem;
 }
+.economy-related-warn{
+  color: #9b6b43;
+  font-size: 1rem;
+}
+
+
+
 .tech-animal-title {
     color: #31849b;
 }
@@ -440,6 +501,12 @@ h3{
     color: #31849b;
     font-size: 1rem;
 }
+.tech-related-warn{
+  color: #31849b;
+  font-size: 1rem;
+}
+
+
 
 .food-animal-title {
     color: #FF7012;
@@ -447,6 +514,10 @@ h3{
 .food-animal-celeb {
     color: #FF7012;
     font-size: 1rem;
+}
+.food-related-warn {
+  color: #FF7012;
+  font-size: 1rem;
 }
 
 /* gender */

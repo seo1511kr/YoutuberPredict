@@ -1,443 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
 
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
-		<!-- Bootstrap CSS -->
-		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+	<!-- Bootstrap CSS -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
 
-		<title>내가 유튜버라면?</title>
-		<meta name="title" content="내가 유튜버라면?" />
-		<meta
-			name="subject"
-			content="인공지능이 예측하는 내 유튜브채널, 유튜브 한 번 시작해볼까?"
-		/>
-		<meta
-			name="keywords"
-			content="유튜브추천, 유튜브 순위, 유튜브 카테고리, 유튜브 알고리즘, 먹방 유튜브, 브이로그, 테크 유튜버, 헬스 유튜버, 게임 유튜버, 골드버튼, 실버버튼, 구독자, 조회수, AI 관상, MBTI, 성격별 직업, 인공지능 유튜브 추천"
-		/>
-		<meta name="author" content="아코마" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="canonical" href="https://focused-knuth-7ddfc1.netlify.app" />
-		<meta property="og:url" content="https://focused-knuth-7ddfc1.netlify.app" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="내가 유튜버라면?" />
-		<meta
-			property="og:description"
-			content="얼굴과 성격으로 내 유튜브 채널을 예측해보자!. 유튜브 시작하기 딱 좋은 요즘, 인공지능의 도움으로 어떤 주제로 시작할지 판단해보세요. 사진 데이터는 그 어디에도 전송되지 않습니다. 게임, 패션, 테크, 운동, 코미디, 일상, 먹방 등 다양한 분야중 나에 어울리는 카테고리를 찾을 수 있습니다. 예상 구독자 수를 친구들과 공유하며 서비스를 즐겨보세요!"
-		/>
+	<title>내가 유튜버라면?</title>
+	<meta name="title" content="내가 유튜버라면?" />
+	<meta name="subject" content="관상으로 살펴보는 나의 유튜브 채널" />
+	<meta name="keywords"
+		content="유튜브추천, 유튜브 순위, 유튜브 카테고리, 유튜브 알고리즘, 먹방 유튜브, 브이로그, 테크 유튜버, 헬스 유튜버, 게임 유튜버, 골드버튼, 실버버튼, 구독자, 조회수, AI 관상, MBTI, 성격별 직업, 인공지능 유튜브 추천" />
+	<meta name="author" content="아코마" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="canonical" href="https://focused-knuth-7ddfc1.netlify.app" />
+	<meta property="og:url" content="https://focused-knuth-7ddfc1.netlify.app" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="내가 유튜버라면?" />
+	<meta property="og:description"
+		content="얼굴과 성격으로 내 유튜브 채널을 예측해보자!. 유튜브 시작하기 딱 좋은 요즘, 인공지능의 도움으로 어떤 주제로 시작할지 판단해보세요. 사진 데이터는 그 어디에도 전송되지 않습니다. 게임, 패션, 테크, 운동, 코미디, 일상, 먹방 등 다양한 분야중 나에 어울리는 카테고리를 찾을 수 있습니다. 예상 구독자 수를 친구들과 공유하며 서비스를 즐겨보세요!" />
 
-		<!-- <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" /> -->
+	<!-- <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" /> -->
 
-		<!--아이콘-->
-		<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!--아이콘-->
+	<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
 
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-		<script
-			type="text/javascript"
-			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-601e8bf614956eb1"
-		></script>
-	</head>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-601e8bf614956eb1"></script>
 
-	<!-- 부트스트랩 -->
+</head>
 
-	<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
-	<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
-	<!--[if lt IE 9]>
+<!-- 부트스트랩 -->
+
+<!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+<!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<body>
-		<nav class="p-3 container navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="https://focused-knuth-7ddfc1.netlify.app"
-				>유튜브 채널 예측</a
-			>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#"
-							>내가 유튜버라면?
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/"
-							>유튜브 시작하러가기</a
-						>
-					</li>
-				</ul>
-			</div>
-		</nav>
+<body>
+	<nav class="p-3 container navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="https://focused-knuth-7ddfc1.netlify.app">유튜브 채널 예측</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">내가 유튜버라면?
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" id="yotube-top-link" href="https://www.youtube.com/">유튜브 시작하러가기</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-		<section class="section">
-			<h1 class="title">내가 유튜버라면?</h1>
-			<h2 class="subtitle">AI가 판단한 나의 유튜브 채널</h2>
-			<h2 class="sr-only">나에게 어울리는 유튜브 채널은 무엇일까?</h2>
-			<h3 class="sr-only">
-				카테고리별 대표 유튜버들의 사진을 학습한 인공지능이 MBTI별 점수와 더불어 구독자 수도
-				예측해드립니다.
-			</h3>
-			<h4 class="sr-only">
-				본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.
-			</h4>
-			<p class="sr-only">
-				얼굴과 성격으로 내 유튜브 채널을 예측해보자!. 유튜브 시작하기 딱 좋은 요즘,
-				인공지능의 도움으로 어떤 주제로 시작할지 판단해보세요. 사진 데이터는 그 어디에도
-				전송되지 않습니다. 게임, 패션, 테크, 운동, 코미디, 일상, 먹방 등 다양한 분야중 나에
-				어울리는 카테고리를 찾을 수 있습니다. 예상 구독자 수를 친구들과 공유하며 서비스를
-				즐겨보세요!
-			</p>
-		</section>
-
-		<section class="youtube pb-3" id="yotube-mid-link">
-			<div class="container mt-3 youtube-cover d-flex flex-row align-items-center"></div>
-		</section>
-
-		<script
-			class="jsbin"
-			src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
-		></script>
+	<section class="mb-4 section">
+		<h1 class="title">내가 유튜버라면?
+		</h1>
+		<h2 class="subtitle">AI가 알려주는 나의 <img src='img/logo2.svg' class="youtubelogo"> 채널</h2>
 
 
-			
-			
-			
-			
-			<div class="mt-3 file-upload">
-				<div class="image-upload-wrap ml-5">
-					<input
-						class="file-upload-input"
-						type="file"
-						onchange="readURL(this);"
-						accept="image/*"
-					/>
-					<div class="drag-text">
-						<img src="img/iconfinder_Camera_2138264.png" class="mt-5 pt-5 upload" />
-						<h3 class="mt-5 pt-4 pb-5 upload-text">얼굴 위주의 사진을 업로드하세요!</h3>
-					</div>
-				</div>
+		<h2 class="sr-only">나에게 어울리는 유튜브 채널은 무엇일까?</h2>
+		<h3 class="sr-only">
+			카테고리별 대표 유튜버들의 사진을 학습한 인공지능이 MBTI별 점수와 더불어 구독자 수도
+			예측해드립니다.
+		</h3>
+		<h4 class="sr-only">
+			본 서비스는 Google의 인공지능 teachable machine 2.0을 활용하였습니다.
+		</h4>
+		<p class="sr-only">
+			얼굴과 성격으로 내 유튜브 채널을 예측해보자!. 유튜브 시작하기 딱 좋은 요즘,
+			인공지능의 도움으로 어떤 주제로 시작할지 판단해보세요. 사진 데이터는 그 어디에도
+			전송되지 않습니다. 게임, 패션, 테크, 운동, 코미디, 일상, 먹방 등 다양한 분야중 나에
+			어울리는 카테고리를 찾을 수 있습니다. 예상 구독자 수를 친구들과 공유하며 서비스를
+			즐겨보세요!
+		</p>
+		<script>
+			function showspeech(){
+				var speechBubble=document.querySelector('.speech-bubble');
+			console.log(speechBubble);
+			speechBubble.style.display='block';
+
+			}
+
+			function nonespeech(){
+				var speechBubble=document.querySelector('.speech-bubble');
+			console.log(speechBubble);
+			speechBubble.style.display='none';
+
+			}
+		</script>
+	</section>
+
+		<div class="container d-flex"><img src='img/robot2.svg' class="robot" onmouseover="showspeech()" onmouseout="nonespeech()">
+		<div class="speech-bubble">안녕하세요? 관상별 성향을 학습한 점쟁봇입니다.</div>
+	</div>
+
+
+	<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	
-			</div>
 
-			<div class="container file-upload-content">
-				<div class="mb-5 row">
-					<img
-						class="col-3 file-upload-image rounded-circle"
-						id="face-image"
-						src="#"
-						alt="your image"
-					/>
-					<div class="col result-box"><p class="result-message"></p></div>
-				</div>
-				<div id="loading" class="animated bounce">
-					<div class="spinner-border" role="status">
-						<span class="sr-only">Loading...</span>
-					</div>
-					<span class="text-center">AI 분석중</span>
-				</div>
-				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
-				<!-- Go to www.addthis.com/dashboard to customize your tools -->
-				<div class="addthis_inline_share_toolbox_j4gc"></div>
 
-				<div class="pt-3 image-title-wrap">
-					<button
-						type="button p-2"
-						onclick="window.location.reload()"
-						class="try-again-btn"
-					>
-						다른 사진으로 재시도
-					</button>
-				</div>
+    <div class="mt-3 pt-5 container file-upload">
+		<h2 class="subtitle">NOTICE: 사진은 어디에도 저장되지 않습니다!</h2>
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/upload2.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">얼굴 위주의 사진을 업로드하세요!</h3>
+            </div>
+        </div>
+
+	
+
+	<div class="container file-upload-content">
+		<div class="mb-5 row">
+			<img class="col-3 file-upload-image rounded-circle" id="face-image" src="#" alt="your image" />
+			<div class="col result-box">
+				<p class="result-message"></p>
 			</div>
 		</div>
-		<footer class="footer pt-5 container d-flex justify-content-center">
-			<div>
-				<p>&copy; 아코마 acoma 2021. All Rights Reserved.</p>
+		<div id="loading" class="animated bounce">
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
 			</div>
-		</footer>
+			<span class="text-center">AI 분석중</span>
+		</div>
+		<div id="label-container" class="d-flex flex-column justify-content-around"></div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<div class="addthis_inline_share_toolbox_j4gc"></div>
 
-		<div id="disqus_thread"></div>
-		<script>
-			/**
-			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-			/*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-			(function () {
-				// DON'T EDIT BELOW THIS LINE
-				var d = document,
-					s = d.createElement('script');
-				s.src = 'https://acoma-1.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-			})();
-		</script>
-		<noscript
-			>Please enable JavaScript to view the
-			<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
-		>
+		<div class="pt-3 image-title-wrap">
+			<button type="button p-2" onclick="window.location.reload()" class="try-again-btn">
+				다른 사진으로 재시도
+			</button>
+		</div>
+	</div>
+	</div>
+	<footer class="footer pt-5 container d-flex justify-content-center">
+		<div>
+			<p>&copy; 아코마 acoma 2021. All Rights Reserved.</p>
+		</div>
+	</footer>
 
-		<script>
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader();
-					reader.onload = function (e) {
-						$('.image-upload-wrap').hide();
-						$('#loading').show();
-						$('.file-upload-image').attr('src', e.target.result);
-						$('.file-upload-content').show();
-						$('.image-title').html(input.files[0].name);
-					};
-					reader.readAsDataURL(input.files[0]);
-					init().then(function () {
-						console.log('hello');
-						predict();
-						$('#loading').hide();
-					});
-				} else {
-					removeUpload();
-				}
+	<div id="disqus_thread"></div>
+
+	<script>
+		/**
+		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+		/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+		(function () {
+			// DON'T EDIT BELOW THIS LINE
+			var d = document,
+				s = d.createElement('script');
+			s.src = 'https://acoma-1.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the
+		<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+	<script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('.image-upload-wrap').hide();
+					$('#loading').show();
+					$('.file-upload-image').attr('src', e.target.result);
+					$('.file-upload-content').show();
+					$('.image-title').html(input.files[0].name);
+				};
+				reader.readAsDataURL(input.files[0]);
+				init().then(function () {
+					console.log('hello');
+					predict();
+					$('#loading').hide();
+				});
+			} else {
+				removeUpload();
 			}
+		}
 
-			function removeUpload() {
-				$('.file-upload-input').replaceWith($('.file-upload-input').clone());
-				$('.file-upload-content').hide();
-				$('.image-upload-wrap').show();
-			}
-			$('.image-upload-wrap').bind('dragover', function () {
-				$('.image-upload-wrap').addClass('image-dropping');
-			});
-			$('.image-upload-wrap').bind('dragleave', function () {
-				$('.image-upload-wrap').removeClass('image-dropping');
-			});
-		</script>
+		function removeUpload() {
+			$('.file-upload-input').replaceWith($('.file-upload-input').clone());
+			$('.file-upload-content').hide();
+			$('.image-upload-wrap').show();
+		}
+		$('.image-upload-wrap').bind('dragover', function () {
+			$('.image-upload-wrap').addClass('image-dropping');
+		});
+		$('.image-upload-wrap').bind('dragleave', function () {
+			$('.image-upload-wrap').removeClass('image-dropping');
+		});
+	</script>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-			crossorigin="anonymous"
-		></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+
+
 
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 
-		<script type="text/javascript">
-			// More API functions here:
-			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-			let URL;
-			// the link to your model provided by Teachable Machine export panel
-			const urlMale = 'https://teachablemachine.withgoogle.com/models/NpVRJJEQj/';
-			const urlFemale = 'https://teachablemachine.withgoogle.com/models/NpVRJJEQj/';
 
-			let model, webcam, labelContainer, maxPredictions;
 
-			// Load the image model and setup the webcam
-			async function init() {
+	<script type="text/javascript">
+		// More API functions here:
+		// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+		let URL;
+		// the link to your model provided by Teachable Machine export panel
 	
-					URL = urlFemale;
+		const url = 'https://teachablemachine.withgoogle.com/models/4H6l-W3s8/';
+
+		let model, webcam, labelContainer, maxPredictions;
+
+		// Load the image model and setup the webcam
+		async function init() {
+
+			URL = url;
 
 
-				const modelURL = URL + 'model.json';
-				const metadataURL = URL + 'metadata.json';
-				model = await tmImage.load(modelURL, metadataURL);
-				maxPredictions = model.getTotalClasses();
-				labelContainer = document.getElementById('label-container');
-				for (let i = 0; i < maxPredictions; i++) {
-					var element = document.createElement('div');
-					element.classList.add('d-flex');
-					labelContainer.appendChild(element);
-				}
+			const modelURL = URL + 'model.json';
+			const metadataURL = URL + 'metadata.json';
+			model = await tmImage.load(modelURL, metadataURL);
+			maxPredictions = model.getTotalClasses();
+			labelContainer = document.getElementById('label-container');
+			for (let i = 0; i < maxPredictions; i++) {
+				var element = document.createElement('div');
+				element.classList.add('d-flex');
+				labelContainer.appendChild(element);
+			}
+		}
+
+		// run the webcam image through the image model
+		async function predict() {
+			// predict can take in an image, video or canvas html element
+			var image = document.getElementById('face-image');
+			const prediction = await model.predict(image, false);
+			prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+			console.log(prediction[0].className);
+			var resultTitle, resultExplain, resultCeleb, resultWarn;
+
+
+
+
+			switch (prediction[0].className) {
+				case 'comedy':
+					resultTitle = '코미디/엔터';
+					resultExplain =
+						"가로로 길게 찢어진 입과 양 옆으로 펼쳐진 귀는 다양한 재능을 상징해요. 선의 경계를 아슬아슬하게 지키는 드립과 참신한 컨텐츠 기획으로 최단시간 골드버튼의 주인공이 될 거에요!";
+						resultWarn= '사생활, 주작'
+						resultCeleb = '관련 유튜버: 동네놈들, 수상한녀석들, 보물섬';
+
+					break;
+
+				case 'sports':
+					resultTitle = '스포츠/챌린지';
+					resultExplain = "큼직한 이목구비와 길죽한 얼굴은 끈기, 그리고 예상치못한 허당미를 나타내요. 때로는 경이로운 신체능력, 때로는 고장난듯한 허당끼에 이성보다는 동성에게 더 인기있는 유튜버가 될 거에요! ";
+					resultWarn= '노잼, 뇌절'
+
+					resultCeleb = '관련 유튜버: 피지컬갤러리, 말왕, 심으뜸';
+					break;
+				case 'game':
+					resultTitle = '게임/소통';
+					resultExplain =
+						"짧은 하관과 살짝 찢어진 눈매는 연약한 멘탈과 재빠른 눈치를 나타내요. 게임을 하면서 멘탈이 무너지는 모습이 시청자들에게 큰 웃음을 주며, 게임판에서 하나의 밈을 완성시킬 수 있을거에요!";
+						resultWarn= '막말, 유리멘탈'
+
+						resultCeleb = '관련 유튜버: 개리형, 릴카, 혜안, 우주하마';
+					break;
+				case 'tech':
+					resultTitle = '테크/기술';
+					resultExplain =
+						"차가운 눈빛과 입체적인 얼굴선은 이성적인 사고방식, 그리고 반전되는 덕후기질을 나타내요. 특정분야에 빠져 몰두하는 성향이 강하고 관심있는 분야를 설명하는 것을 좋아해요.";
+						resultWarn= '노잼 x 2'
+
+						resultCeleb = '관련 유튜버: 잇섭, 에스오디, 조코딩, 1분과학';
+					break;
+				case 'food':
+					resultTitle = '먹방/음식';
+					resultExplain =
+						'짧은 목과, 두툼한 입술은 호탕한 목청, 그리고 왕성한 식욕을 나타내요. 두툼한 입술에 묻은 기름기와 무의식적으로 나오는 호탕한 추임새는 자취생들의 배고픈 밤을 달래주기 충분해요.';
+						resultWarn= '먹뱉, 뒷광고'
+
+						resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
+					break;
+				case 'vlog':
+					resultTitle = '일상/vlog';
+					resultExplain =
+						'날카로운듯 순둥한 눈매와 오똑한 코 그리고 갸름한 얼굴형을 가진 당신!, 능글맞은 눈빛과 타고난 어장관리력은 vlog/일상 장르 안성맞춤. 당신에게 빠진 시청자들은 특별할 것 없는 당신의 일상이 1000만 영화보다 즐거울거에요';
+						resultWarn= '사생활, 잦은휴방'
+
+						resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
+					break;
+				case 'economy':
+					resultTitle = '경제/시사';
+					resultExplain =
+						'둥그런 얼굴, 졸린듯 날렵한 눈매, 그리고 얇은 입술을 가진 당신!, 침착하고 손익을 따지는 계산에 능해요. 시사/경제 분야에서 당신의 냉정한 비판은 오히려 사이다라는 반응과 함께 시청자들의 호응을 이끌어낼 수 있어요! ';
+						resultWarn= '뒷광고, 막말'
+
+						resultCeleb = '관련 유튜버: 슈카, 삼프로TV, 김미경TV, 신사임당';
+					break;
+				case 'fashion':
+					resultTitle = '패션/뷰티';
+					resultExplain =
+						'깊은 눈동자, 짙은 눈썹, 선명한 턱선을 가진 당신!, 변화를 빠르게 포착하고 뚜렷한 개성을 갖고있어요. 처음에는 당신의 스타일을 거부하던 시청자들도, 어느순간 쇼핑 직전에는 당신의 유튜브를 찾아보게 될거에요';
+						resultWarn= '뒷광고, 막말'
+
+						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
+					break;
+				default:
+					resultTitle = '알수없음';
+					resultExplain = '';
+					resultCeleb = '';
 			}
 
-			// run the webcam image through the image model
-			async function predict() {
-				// predict can take in an image, video or canvas html element
-				var image = document.getElementById('face-image');
-				const prediction = await model.predict(image, false);
-				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-				console.log(prediction[0].className);
-				var resultTitle, resultExplain, resultCeleb;
-				
-				
 
-				
-					switch (prediction[0].className) {
-						case 'comedy':
-							resultTitle = '코미디/엔터';
-							resultExplain =
-								"내가 그렇게 웃긴가? 라는 생각 한 번쯤 해본적 있으시죠? 당신의 빵터지는 드립이 드디어 빛을보는 순간입니다! 유머/코미디는 팀원들과의 합이 중요하니 마음에 맞는 팀원들을 찾아보세요!";
-							resultCeleb = '관련 유튜버: 동네놈들, 수상한녀석들, 보물섬';
-							break;
+			var title =
+				"<div class='" +
+				prediction[0].className +
+				"-channel-category'>" +
+				resultTitle +
+				'</div>';
+			var explain = "<div class='channel-explain pt-2'>" + resultExplain + '</div>';
+			var celeb =
+				"<div class='" +
+				prediction[0].className +
+				"-related-celeb pt-2 pb-2'>" +
+				resultCeleb +
+				'</div>';
+			var warnCa = "<div class='" +
+				prediction[0].className +
+				"-related-warn pt-2 pb-2'>" + "주의사항:" +
+				resultWarn +
+				'</div>';
+	
+			var mbti = [2, 3, 4, 5];
 
-						case 'sports':
-							resultTitle = '스포츠/액티브';
-							resultExplain ="리더의 자질과 끈기를 갖춘 당신! 이미 운동을 잘한다면 더할나위 없겠지만, 그렇지 않더라도 꾸준한 노력으로 점차 좋아지고 변해가는 모습을 함께 나눠보는 것은 어떨까요?"
-							;
-							resultCeleb = '관련 유튜버: 피지컬갤러리, 말왕, 심으뜸';
-							break;
-						case 'game':
-							resultTitle = '게임/소통';
-							resultExplain =
-								"강인한 멘탈과 재치! 컨텐츠는 필요없다! 게임에서 발생하는 이벤트들을 순식간에 컨텐츠로 만들어버리는 능력! 게임을 좋아하고 어느정도의 실력도 있다면, 지금 당장 도전해보는 것은 어떨까요?";
-							resultCeleb = '관련 유튜버: 개리형, 릴카, 혜안, 우주하마';
-							break;
-						case 'tech':
-							resultTitle = '테크/기술';
-							resultExplain =
-								"파고드는 성격과 손쉬운 설명까지! 꼭 과학, 기술분야가 아니더라도 본인 관심분야의 흥미로운 사실들을 실생활에 적용시켜 설명해보세요! 구독자는 좀 적어도 꾸준히 롱런하기 좋은 분야에요";
-							resultCeleb = '관련 유튜버: 잇섭, 에스오디, 조코딩, 1분과학';
-							break;
-						case 'food':
-							resultTitle = '먹방/음식';
-							resultExplain =
-								'혼자인건 싫지만 시끌벅적보다는 소소한 분위기를 좋아하신다면, 요리/먹방을 추천드려요. 맛있는 음식들을 즐기면서 구독자들과 즐거운 담소를 나눠보면 어떨까요? ';
-							resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
-							break;
-						case 'vlog':
-							resultTitle = '일상/vlog';
-							resultExplain =
-								'숨만쉬어도 화재! 하나부터 열까지 특별한 당신의 일상은 구독자들에게 늘 흥미로울거에요. 트렌디한 편집능력만 갖춘다면 짭짤한 용돈벌이 쌉가능!';
-							resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
-							break;
-						case 'economy':
-							resultTitle = '경제/시사';
-							resultExplain =
-								'확실한 자기주장과 뛰어난 논리력으로 본인의 주장을 펼쳐보세요! 최근 핫한 주식을 공부해서 도전한다면, 주식으로 잃은 돈 금새 복구하겠는데요?';
-							resultCeleb = '관련 유튜버: 슈카, 삼프로TV, 김미경TV, 신사임당';
-							break;
-						case 'fashion':
-							resultTitle = '패션/뷰티';
-							resultExplain =
-								'혹시 본인이 무심코 산 아이템들이 어느 순간 유행이 되어있진 않나요? 코로나가 끝나고 다들 꾸미기 시작할 때는 늦어요! 물들어 올 때 노 저을라면 서둘러야겠는데요?';
-							resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
-							break;
-						default:
-							resultTitle = '알수없음';
-							resultExplain = '';
-							resultCeleb = '';
-					}
-				 
-
-				var title =
-					"<div class='" +
-					prediction[0].className +
-					"-channel-category'>" +
-					resultTitle +
-					'</div>';
-				var explain = "<div class='channel-explain pt-2'>" + resultExplain + '</div>';
-				var celeb =
-					"<div class='" +
-					prediction[0].className +
-					"-related-celeb pt-2 pb-2'>" +
-					resultCeleb +
-					'</div>';
-				var mbti=[2,3,4,5];
-				var subsPred= Math.round(prediction[0].probability * 100000 *mbti[0]+ prediction[1].probability* 100000+prediction[1].probability* 100000)
-				var subsPredict = "<div class='channel-subsPredict pt-2'>" + '예상구독자 수:' + subsPred + '명'+'</div>';
-
-				
-				
-				$('.result-message').html(title + explain + celeb + subsPredict);
-				var barWidth;
-				for (let i = 0; i < maxPredictions; i++) {
-					if (prediction[i].probability.toFixed(2) > 0.1) {
-						barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
-					} else if (prediction[i].probability.toFixed(2) >= 0.01) {
-						barWidth = '4%';
-					} else {
-						barWidth = '2%';
-					}
-					var labelTitle;
-					switch (prediction[i].className) {
-						case 'comedy':
-							labelTitle = '코미디/엔터';
-							break;
-						case 'game':
-							labelTitle = '게임/소통';
-							break;
-						case 'tech':
-							labelTitle = '테크/기술';
-							break;
-						case 'food':
-							labelTitle = '먹방/음식';
-							break;
-						case 'vlog':
-							labelTitle = '일상/vlog';
-							break;
-						case 'economy':
-							labelTitle = '경제/시사';
-							break;
-						case 'fashion':
-							labelTitle = '패션/뷰티';
-							break;
-						case 'sports':
-							labelTitle = '스포츠/액티브';
-							break;
-							
-							
-						default:
-							labelTitle = '알수없음';
-					}
-					var label =
-						"<div class='channel-label d-flex align-items-center'>" +
-						labelTitle +
-						'</div>';
-					var bar =
-						"<div class='bar-container position-relative container'><div class='" +
-						prediction[i].className +
-						"-box'></div><div class='d-flex justify-content-center align-items-center " +
-						prediction[i].className +
-						"-bar' style='width: " +
-						barWidth +
-						"'><span class='d-block percent-text'>" +
-						Math.round(prediction[i].probability.toFixed(2) * 100) +
-						'%</span></div></div>';
-					labelContainer.childNodes[i].innerHTML = label + bar;
-				}
+			
+			function getPred(){
+				var res=0;
+				for (let i = 0; i < maxPredictions; i++){
+				res+=Math.round(Math.sqrt([prediction[i].probability * 10000000])*10);
+				console.log(res);
 			}
+			return res;
+		}
+			var subsPred=getPred()
+			var subsPredict = "<div class='channel-subsPredict pt-2'>" + '예상구독자 수:' + subsPred + '명' + '</div>';
+
+
+
+			$('.result-message').html(title + explain + warnCa + celeb + subsPredict);
+			var barWidth;
+			for (let i = 0; i < maxPredictions; i++) {
+				if (prediction[i].probability.toFixed(2) > 0.1) {
+					barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+				} else if (prediction[i].probability.toFixed(2) >= 0.01) {
+					barWidth = '4%';
+				} else {
+					barWidth = '2%';
+				}
+				var labelTitle;
+				switch (prediction[i].className) {
+					case 'comedy':
+						labelTitle = '코미디/엔터';
+						break;
+					case 'game':
+						labelTitle = '게임/소통';
+						break;
+					case 'tech':
+						labelTitle = '테크/기술';
+						break;
+					case 'food':
+						labelTitle = '먹방/음식';
+						break;
+					case 'vlog':
+						labelTitle = '일상/vlog';
+						break;
+					case 'economy':
+						labelTitle = '경제/시사';
+						break;
+					case 'fashion':
+						labelTitle = '패션/뷰티';
+						break;
+					case 'sports':
+						labelTitle = '스포츠/액티브';
+						break;
+
+
+					default:
+						labelTitle = '알수없음';
+				}
+				var label =
+					"<div class='channel-label d-flex align-items-center'>" +
+					labelTitle +
+					'</div>';
+				var bar =
+					"<div class='bar-container position-relative container'><div class='" +
+					prediction[i].className +
+					"-box'></div><div class='d-flex justify-content-center align-items-center " +
+					prediction[i].className +
+					"-bar' style='width: " +
+					barWidth +
+					"'><span class='d-block percent-text'>" +
+					Math.round(prediction[i].probability.toFixed(2) * 100) +
+					'%</span></div></div>';
+				labelContainer.childNodes[i].innerHTML = label + bar;
+			}
+		}
 
 			//async await이 있기때문에 .then 가능 init이 완료되기 전에 predict가 실행되는 것 방지
-		</script>
-	</body>
+	</script>
+</body>
 
-	<!--Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)-->
+<!--Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)-->
 
-	<!--Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:-->
+<!--Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:-->
 
-	<!--The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.-->
+<!--The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.-->
 
-	<!--THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+<!--THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+
 </html>
 
 <!--https://codepen.io/-->
+
+
+
