@@ -1,4 +1,6 @@
+
 .speech-bubble{
+
   display: none;
   margin-left: 3rem;
   padding-top: 1.5rem;
@@ -29,6 +31,7 @@ body {
 }
 .file-upload {
   padding: 15% 3%;
+  padding-bottom: 8%;
   margin: 0 auto;
   border-radius: 10px;
   border: solid 1.5px rgb(47, 184, 138);
@@ -81,6 +84,7 @@ body {
 }
 
 .image-upload-wrap {
+  
   width: 60%;
   margin: 0 auto;
   position: relative;
@@ -130,6 +134,9 @@ h3{
 }
 
 .file-upload-image {
+  margin-top: 5%;
+  width:15rem;
+  height:12rem;
   max-height: 30%;
   max-width: 30%;
 	margin-left:10%;
@@ -395,9 +402,16 @@ h3{
 
 
 
+.result-box{
+  background-color: white;
+  border-radius: 30px;
+}
+
 
 .result-message {
-	margin-top:20%;
+  margin-top: 5%;
+  padding-left: 3rem;
+  text-align: left;
     font-size: 1.5rem;
 }
 
@@ -412,10 +426,10 @@ h3{
 .channel-explain {
     font-size: 1rem;
 }
-.comedy-animal-title {
+.comedy-channel-category {
     color: #3ba363;
 }
-.comedy-animal-celeb {
+.comedy-related-celeb {
     color: #3ba363;
     font-size: 1rem;
 }
@@ -425,10 +439,10 @@ h3{
 }
 
 
-.game-animal-title {
+.game-channel-category {
     color: rgba(208, 233, 70, 0.87);
 }
-.game-animal-celeb {
+.game-related-celeb {
     color: rgba(208, 233, 70, 0.87);
     font-size: 1rem;
 }
@@ -438,10 +452,10 @@ h3{
 }
 
 
-.sports-animal-title {
+.sports-channel-category {
     color: #ff6c0a;
 }
-.sports-animal-celeb {
+.sports-related-celeb{
     color: #ff6c0a;
     font-size: 1rem;
 }
@@ -452,10 +466,10 @@ h3{
 
 
 
-.vlog-animal-title {
+.vlog-channel-category {
     color: #548dd4;
 }
-.vlog-animal-celeb {
+.vlog-related-celeb{
     color: #548dd4;
     font-size: 1rem;
 }
@@ -465,11 +479,11 @@ h3{
 }
 
 
-.fashion-animal-title {
+.fashion-channel-category {
     color: #e56995;
 }
 
-.fashion-animal-celeb {
+.fashion-related-celeb{
     color: #e56995;
     font-size: 1rem;
 }
@@ -480,24 +494,24 @@ h3{
 
 
 
-.economy-animal-title {
+.economy-channel-category {
     color: #9b6b43;
 }
-.economy-animal-celeb {
+.economy-related-celeb {
     color: #9b6b43;
     font-size: 1rem;
 }
-.economy-related-warn{
+.economy-related-celeb{
   color: #9b6b43;
   font-size: 1rem;
 }
 
 
 
-.tech-animal-title {
+.tech-channel-category {
     color: #31849b;
 }
-.tech-animal-celeb {
+.tech-related-celeb {
     color: #31849b;
     font-size: 1rem;
 }
@@ -508,10 +522,10 @@ h3{
 
 
 
-.food-animal-title {
+.food--channel-category{
     color: #FF7012;
 }
-.food-animal-celeb {
+.food-related-celeb{
     color: #FF7012;
     font-size: 1rem;
 }
