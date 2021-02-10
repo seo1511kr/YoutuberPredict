@@ -1,4 +1,144 @@
 
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -120px 60px;
+  }
+}
+
+
+
+
+.Pressbtn{
+  font-size: 0.5rem;
+  background-color: darkgrey;
+  width: auto;
+  border-style: solid;
+  border-width: 3.5px;
+  border-left-color: white;
+  border-top-color: white;
+  border-bottom-color: dimgrey;
+  border-right-color: dimgrey;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+.Pressbtn{
+  padding: 3% 5%;
+  text-align:center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.Pressbtn:hover{
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+.Pressbtn:active{
+  background-color: darkgrey;
+  color: black;
+  border-left-color: dimgrey;
+  border-top-color: dimgrey;
+  border-bottom-color: white;
+  border-right-color: white;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+#mbti_start {
+
+  background-color: #ffec63;
+  background-image: linear-gradient(
+      45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    ),
+    linear-gradient(
+      -45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    );
+  background-size: 60px 60px;
+  background-position: 0 0;
+  animation: slide 4s infinite linear;
+  color:black;
+  font-family: "Questrial", sans-serif;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+
+
+#mbti_start {
+  height: 35rem;
+  padding: 15% 3%;
+  padding-bottom: 8%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 1.5px rgb(47, 184, 138);
+  background-color:  rgba(47, 184, 138,0.3);
+
+}
+
+
+
+
+#mbti1{
+  display: none;
+}
+
+
+
+#machinelearning{
+  display: none;
+}
+
+.finish{
+  display: none;
+  margin-left: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1.5px rgb(47, 184, 138);
+}
+.analysting{
+  display: none;
+  margin-left: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1.5px rgb(47, 184, 138);
+}
 .speech-bubble{
 
   display: none;
@@ -29,6 +169,10 @@ body {
   box-sizing: border-box;
   color: #35465d;
 }
+
+
+
+
 .file-upload {
   padding: 15% 3%;
   padding-bottom: 8%;
@@ -135,11 +279,11 @@ h3{
 
 .file-upload-image {
   margin-top: 5%;
-  width:15rem;
-  height:12rem;
+  width:13rem;
+  height:13rem;
   max-height: 30%;
   max-width: 30%;
-	margin-left:10%;
+	margin-left:4%;
   padding: 10px;
 }
 
@@ -400,11 +544,39 @@ h3{
     margin: 0 auto;
 }
 
+.resultTotal{
+  margin-top: 1.2rem;
+  background-color: rgba(230, 230, 230,0.7);
+  border-radius: 30px;
+}
+
+
+  .subsBtn:focus{
+    border: none;
+    outline:none;
+
+  }
+
+.subsBtn{
+  margin-top: 0.5rem;
+  border:none;
+  padding-top: 0.7rem;
+  padding-bottom: 0.9rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+margin-right: 3rem;
+
+  font-family: '맑은 고딕';
+  font-size: 0.9rem;
+  color: white;
+  background-color: rgba(218, 45, 33, 0.938);
+  height: 2.7rem;
+}
 
 
 .result-box{
-  background-color: white;
-  border-radius: 30px;
+  margin-bottom: 1rem;
+  background-color:rgba(230, 230, 230,0) ;
 }
 
 
