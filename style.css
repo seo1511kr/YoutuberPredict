@@ -1,14 +1,184 @@
-
-
-@keyframes slide {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: -120px 60px;
-  }
+.robot-container{
+  display: flex;
 }
+.first-page{
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+
+html,body{
+  height: 100%;
+  margin:0;
+}
+.newbody{  box-sizing: border-box;
+  color: #35465d;
+  height: 100%;
+  display: none;
+  color:black;
+  font-family: 'Do Hyeon', sans-serif;
+  background-color: #ffec63;
+  background-image: linear-gradient(
+      45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    ),
+    linear-gradient(
+      -45deg,
+      #ffd966 25%,
+      transparent 25%,
+      transparent 75%,
+      #ffd966 75%,
+      #ffd966
+    );
+  background-size: 60px 60px;
+  background-position: 0 0;
+  animation: slide 4s infinite linear;
+}
+
+
+
+
+.swiper-button-next{
+  color: #ffec63;
+
+}
+.swiper-button-prev{
+ color: #ffec63;
+
+}
+
+
+.swiper-container {
+  width: 70%;
+}
+
+.swiper-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  padding: 1.3rem 2rem;
+
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.swiper-slide {
+
+
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.topic{
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+
+.btn {margin-bottom: 5%;
+  width:80%;
+  color:inherit;
+    font-family:inherit;
+  font-size: inherit;
+  background: white;
+  padding: 2% 2%;
+  border: 3px solid black;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+}
+
+
+
+
+
+
+.btn:hover {
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
+
+.choose{
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.submitBtn{
+  font-size: 0.5rem;
+  background-color: darkgrey;
+  width: auto;
+  border-style: solid;
+  border-width: 3.5px;
+  border-left-color: white;
+  border-top-color: white;
+  border-bottom-color: dimgrey;
+  border-right-color: dimgrey;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+.submitBtn{
+  padding: 3% 5%;
+  text-align:center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.submitBtn:hover{
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+.submitBtn:active{
+  background-color: darkgrey;
+  color: black;
+  border-left-color: dimgrey;
+  border-top-color: dimgrey;
+  border-bottom-color: white;
+  border-right-color: white;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
 
 
 
@@ -59,7 +229,7 @@
 
 
 #mbti_start {
-
+display: flex;
   background-color: #ffec63;
   background-image: linear-gradient(
       45deg,
@@ -83,13 +253,20 @@
   color:black;
   font-family: "Questrial", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
 
 }
 
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
 
-
-
+  to {
+    background-position: -120px 60px;
+  }
+}
 
 #mbti_start {
   height: 35rem;
@@ -101,6 +278,20 @@
   background-color:  rgba(47, 184, 138,0.3);
 
 }
+
+
+.mbtiset{
+
+  width: 85%;
+  height: 80%;
+  display: none;
+  font-size: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
 
 
 
@@ -174,6 +365,9 @@ body {
 
 
 .file-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15% 3%;
   padding-bottom: 8%;
   margin: 0 auto;
