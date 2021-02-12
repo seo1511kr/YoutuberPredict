@@ -603,6 +603,16 @@ $('.btn-mbti').on('click',(e) => {
 
 						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
 					break;
+
+					case 'ENTJ':
+					resultTitle = '야망의 눈빛 멘토링유튜버';
+					resultExplain =
+						'유튜브를 시작할 무렵 당신은 이미 본업에서 어느 정도의 성과를 이뤄냈을 것입니다.  당신이 학생이라면 그 성과는 대학 입시?가 될 수도 있지요. 사회에서의 성과는 당신이 빠르게 유튜브에서 자리 잡도록 도와줄 것입니다. 하지만 야망이 넘치는 당신에게 유튜브는 새로운 사업을 위한 발판일 뿐입니다.  그러나! 그 시기를 조심해야 합니다. 초기에는 사업과 유튜브 모두 번창하며 많은 청년의 롤모델이 되겠지만, 가끔 성공에 대한 야망으로 과대광고, 주작과 같은 큰 실수를 저지를 가능성이 있어요.';
+						resultWarn= '뒷광고, 막말';
+
+						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
+					break;
+
 				default:
 					resultTitle = '알수없음';
 					resultExplain = '';
@@ -625,7 +635,7 @@ $('.btn-mbti').on('click',(e) => {
 				'</div>';
 
 
-			var typeimg = "<div><img src='img/" + res + ".png'></div>";
+			var typeimg = "<div class='img-box'><img src='img/" + res + ".png'></div>";
 				console.log(typeimg);
 			
 				
@@ -640,7 +650,7 @@ console.log(title,explain)
 	$('#loading').hide();
 	showspeech('.result-page');
 
-	$('.result-page').html(typeimg+title + explain);
+	$('.result-page').html(typeimg+title + explain + celeb);
 
 
 

@@ -11,7 +11,7 @@
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-width: 40%;
+width: 30%;
 text-align: center;
 }
 
@@ -59,6 +59,13 @@ html,body{
   animation: slide 4s infinite linear;
 }
 
+.newbody .navbar-brand{
+  font-size: 2rem;
+}
+
+.newbody .navbar-light{
+  font-size: 1.5rem;
+}
 
 
 
@@ -111,15 +118,15 @@ html,body{
 
 .topic{
   width: 80%;
-  margin-top: 4%;
-  margin-bottom: 6%;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
-.btn-mbti {margin-bottom: 5%;
-  width:110%;
+.btn-mbti {margin-bottom: 8%;
+  width:130%;
   color:inherit;
     font-family:inherit;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background: white;
   padding: 2% 2% 2% 5%;
   border: 1.2px solid black;
@@ -503,7 +510,7 @@ font-size:1rem;
 
 h3{
   text-align: center;
-	font-size:1.3rem;
+	font-size:1.4rem;
 
 }
 
@@ -841,6 +848,21 @@ margin-right: 3rem;
 }
 
 
+.ENTJ-channel-category {
+  color: rgba(87, 129, 32, 0.95);
+}
+.ENTJ-related-celeb {
+  color: rgba(87, 129, 32, 0.95);
+  font-size: 1rem;
+}
+.ENTJ-related-warn{
+color: rgba(87, 129, 32, 0.95);
+font-size: 1rem;
+}
+
+
+
+
 .ESTJ-channel-category {
     color: rgba(138, 51, 51, 0.87);
 }
@@ -1041,13 +1063,11 @@ font-size: 1rem;
 }
 
 .result-page img{
-  width: 80%;
+  width: 50%;
 }
 
 
-.result-page div{
-  width: 25%;
-}
+
 
 
 /* gender */
