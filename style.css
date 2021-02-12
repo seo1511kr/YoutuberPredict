@@ -4,14 +4,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 1.3rem 2rem;
 
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-width: 60%;
+width: 40%;
 text-align: center;
 }
 
@@ -81,10 +81,10 @@ html,body{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 1.3rem 2rem;
 
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
@@ -110,24 +110,29 @@ html,body{
 }
 
 .topic{
+  width: 80%;
   margin-top: 4%;
   margin-bottom: 6%;
 }
 
 .btn-mbti {margin-bottom: 5%;
-  width:80%;
+  width:110%;
   color:inherit;
     font-family:inherit;
-  font-size: inherit;
+  font-size: 1.1rem;
   background: white;
-  padding: 2% 2%;
-  border: 3px solid black;
+  padding: 2% 2% 2% 5%;
+  border: 1.2px solid black;
+  border-radius: 10px;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
+  text-align: left;
 }
 
 
-
+.radio{
+  display: none;
+}
 
 
 
@@ -497,7 +502,8 @@ font-size:1rem;
 
 
 h3{
-	font-size:1.5rem;
+  text-align: center;
+	font-size:1.3rem;
 
 }
 
@@ -822,113 +828,227 @@ margin-right: 3rem;
 .channel-explain {
     font-size: 1rem;
 }
-.comedy-channel-category {
-    color: #3ba363;
+.ESTP-channel-category {
+    color: rgba(184, 88, 44,0.87);
 }
-.comedy-related-celeb {
-    color: #3ba363;
+.ESTP-related-celeb {
+    color: rgba(184, 88, 44, 0.87);
     font-size: 1rem;
 }
-.comedy-related-warn{
-  color: #3ba363;
+.ESTP-related-warn{
+  color: rgb(184, 88, 44);
   font-size: 1rem;
 }
 
 
-.game-channel-category {
-    color: rgba(208, 233, 70, 0.87);
+.ESTJ-channel-category {
+    color: rgba(138, 51, 51, 0.87);
 }
-.game-related-celeb {
-    color: rgba(208, 233, 70, 0.87);
+.ESTJ-related-celeb {
+    color: rgba(138, 51, 51, 0.87);
     font-size: 1rem;
 }
-.game-related-warn{
-  color: rgba(208, 233, 70, 0.87);
+.ESTJ-related-warn{
+  color: rgba(138, 51, 51, 0.87);
   font-size: 1rem;
 }
 
 
-.sports-channel-category {
-    color: #ff6c0a;
+.ISTP-channel-category {
+  color: rgba(47, 146, 121, 0.87);
 }
-.sports-related-celeb{
-    color: #ff6c0a;
+.ISTP-related-celeb {
+  color: rgba(47, 146, 121, 0.87);
+  font-size: 1rem;
+}
+.ISTP-related-warn{
+color: rgba(47, 146, 121, 0.87);
+font-size: 1rem;
+}
+
+
+
+
+.ISTJ-channel-category {
+  color: rgba(61, 206, 157, 0.87);
+}
+.ISTJ-related-celeb {
+  color: rgba(61, 206, 157, 0.87);
+  font-size: 1rem;
+}
+.ISTJ-related-warn{
+color: rgba(61, 206, 157, 0.87);
+font-size: 1rem;
+}
+
+
+
+
+.ESFP-channel-category {
+  color: rgba(207, 76, 116, 0.87);
+}
+.ESFP-related-celeb {
+  color: rgba(207, 76, 116, 0.87);
+  font-size: 1rem;
+}
+.ESFP-related-warn{
+color: rgba(207, 76, 116, 0.87);
+font-size: 1rem;
+}
+
+
+
+
+.ESFJ-channel-category {
+  color: rgba(236, 134, 206, 0.938);
+}
+.ESFJ-related-celeb {
+  color: rgba(236, 134, 206, 0.938);
+  font-size: 1rem;
+}
+.ESFJ-related-warn{
+color: rgba(236, 134, 206, 0.938);
+font-size: 1rem;
+}
+
+
+
+
+.ISFJ-channel-category {
+  color: rgba(202, 221, 94, 0.87);
+}
+.ISFJ-related-celeb {
+  color: rgba(202, 221, 94, 0.87);
+  font-size: 1rem;
+}
+.ISFJ-related-warn{
+color: rgba(202, 221, 94, 0.87);
+font-size: 1rem;
+}
+
+
+
+.ISFP-channel-category {
+  color: rgba(184, 78, 161, 0.87);
+}
+.ISFP-related-celeb {
+  color: rgba(184, 78, 161, 0.87);
+  font-size: 1rem;
+}
+.ISFP-related-warn{
+color: rgba(184, 78, 161, 0.87);
+font-size: 1rem;
+}
+
+
+
+.ENTP-channel-category {
+  color: rgba(144, 209, 240, 0.973);
+}
+.ENTP-related-celeb {
+  color: rgba(144, 209, 240, 0.973);
+  font-size: 1rem;
+}
+.ENTP-related-warn{
+color: rgba(144, 209, 240, 0.973);
+font-size: 1rem;
+}
+
+
+
+.INTP-channel-category {
+  color: rgba(75, 177, 207, 0.87);
+}
+.INTP-related-celeb {
+  color: rgba(75, 177, 207, 0.87);
+  font-size: 1rem;
+}
+.INTP-related-warn{
+color: rgba(75, 177, 207, 0.87);
+font-size: 1rem;
+}
+
+
+
+
+
+.INTJ-channel-category {
+    color: rgb(71, 38, 163);
+}
+.INTJ-related-celeb{
+    color:rgb(71, 38, 163);
     font-size: 1rem;
 }
-.sports-related-warn{
-  color: #ff6c0a;
+.INTJ-related-warn{
+  color:rgb(71, 38, 163);
   font-size: 1rem;
 }
 
 
 
-.vlog-channel-category {
-    color: #548dd4;
+.ENFP-channel-category {
+    color: #d6c39f;
 }
-.vlog-related-celeb{
-    color: #548dd4;
+.ENFP-related-celeb{
+    color: #d6c39f;
     font-size: 1rem;
 }
-.vlog-related-warn{
-  color: #548dd4;
+.ENFP-related-warn{
+  color: #d6c39f;
   font-size: 1rem;
 }
 
 
-.fashion-channel-category {
-    color: #e56995;
+.ENFJ-channel-category {
+    color: #7cdad5;
 }
 
-.fashion-related-celeb{
-    color: #e56995;
+.ENFJ-related-celeb{
+    color: #7cdad5;;
     font-size: 1rem;
 }
-.fashion-related-warn{
-  color: #e56995;
-  font-size: 1rem;
-}
-
-
-
-.economy-channel-category {
-    color: #9b6b43;
-}
-.economy-related-celeb {
-    color: #9b6b43;
-    font-size: 1rem;
-}
-.economy-related-celeb{
-  color: #9b6b43;
+.ENFJ-related-warn{
+  color: #7cdad5;
   font-size: 1rem;
 }
 
 
 
-.tech-channel-category {
-    color: #31849b;
+.INFP-channel-category {
+    color: #ba8ecc;
 }
-.tech-related-celeb {
-    color: #31849b;
+.INFP-related-celeb {
+    color: #ba8ecc;
     font-size: 1rem;
 }
-.tech-related-warn{
-  color: #31849b;
+.INFP-related-celeb{
+  color: #ba8ecc;
   font-size: 1rem;
 }
 
 
 
-.food--channel-category{
-    color: #FF7012;
+.INFJ-channel-category {
+    color: #ab8de2;
 }
-.food-related-celeb{
-    color: #FF7012;
+.INFJ-related-celeb {
+    color: #ab8de2;
     font-size: 1rem;
 }
-.food-related-warn {
-  color: #FF7012;
+.INFJ-related-warn{
+  color: #ab8de2;
   font-size: 1rem;
 }
+
+.result-page img{
+  width: 80%;
+}
+
+
+.result-page div{
+  width: 25%;
+}
+
 
 /* gender */
 input#gender {
