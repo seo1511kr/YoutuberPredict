@@ -1,3 +1,22 @@
+.result-page{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  padding: 1.3rem 2rem;
+
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+width: 60%;
+text-align: center;
+}
+
+
+
 .robot-container{
   display: flex;
 }
@@ -54,7 +73,7 @@ html,body{
 
 
 .swiper-container {
-  width: 70%;
+  width: 95%
 }
 
 .swiper-container {
@@ -95,7 +114,7 @@ html,body{
   margin-bottom: 6%;
 }
 
-.btn {margin-bottom: 5%;
+.btn-mbti {margin-bottom: 5%;
   width:80%;
   color:inherit;
     font-family:inherit;
@@ -112,19 +131,21 @@ html,body{
 
 
 
-.btn:hover {
+.btn-mbti:hover {
   box-shadow: 0.4rem 0.4rem 0 black;
   transform: translate(-0.4rem, -0.4rem);
 }
 
-.btn:active {
+.btn-mbti:active {
+  background-color: blue;
+
   box-shadow: 0 0 0 black;
   transform: translate(0, 0);
 }
 
-.choose{
+.btn-group-vertical{
 
-  text-align: center;
+  align-items: center;
 }
 
 
@@ -405,6 +426,15 @@ body {
 .file-upload-content {
   display: none;
   text-align: center;
+}
+.newbody > #loading{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
 }
 #loading {
   display: none;
