@@ -6,14 +6,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 1.3rem 2rem;
 
   border: 2px solid black;
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-width: 60%;
+width: 70%;
 max-width: 400px;
 text-align: center;
 }
@@ -848,7 +848,7 @@ margin-right: 3rem;
   margin-top: 4%;
 
   font-family: 'Cute Font', cursive;
-          line-height: 1.6;
+          line-height: 1.4;
   font-weight: 500;
     font-size: 1.6rem;
 }
