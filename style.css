@@ -1,20 +1,19 @@
 
 .result-page{
-  margin: 0%;
+  margin-top: 6%;
   display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.1rem;
-  font-weight: lighter;
+  font-size: 1.2rem;
   padding: 1.3rem 2rem;
 
   border: 2px solid black;
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-width: 50%;
+width: 60%;
 max-width: 400px;
 text-align: center;
 }
@@ -98,7 +97,7 @@ html,body{
 .swiper-slide {
 
 
-
+  padding-bottom:5%;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,23 +118,27 @@ html,body{
   margin-bottom: 3%;
 }
 
-.btn-mbti {margin-bottom: 8%;
+.btn-mbti {
+
+  padding-left: 6%;
   width:110%;
+  height: 100%;
   color:inherit;
     font-family:inherit;
   font-size: 1.2rem;
   background: white;
-  padding: 2% 2% 0% 5%;
   border: 1.2px solid black;
   border-radius: 10px;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
   text-align: left;
+  margin-bottom: 3%;
+
 }
 
 
 .radio{
-  
+display: none;
 }
 
 
@@ -362,10 +365,10 @@ border-radius: 10px;
 }
 .speech-bubble{
 
-  display: none;
-  margin-left: 3rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  display: block;
+  margin-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 border-radius: 10px;
@@ -375,9 +378,13 @@ border-radius: 10px;
 }
 
 
+
+
+
+
 .robot{
   width:auto;
-  height: 4rem;
+  height: 3.5rem;
 }
 
 .youtubelogo{
@@ -832,15 +839,18 @@ margin-right: 3rem;
 .related-celeb{
   margin-top: 2%;
   color: rgba(45, 123, 168, 0.87);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 
 .channel-explain {
-  font-family: 'Gaegu', cursive;
-  font-family: 'Hi Melody', cursive;
-  line-height: 1.5;
-    font-size: 1rem;
+  margin-top: 4%;
+  margin-top: 4%;
+
+  font-family: 'Cute Font', cursive;
+          line-height: 1.6;
+  font-weight: 500;
+    font-size: 1.6rem;
 }
 .ESTP-channel-category {
     color: rgba(184, 88, 44,0.87);
