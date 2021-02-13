@@ -80,6 +80,7 @@ html,body{
 }
 
 .swiper-container {
+  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -212,52 +213,38 @@ display: none;
 
 
 
-
+.start-btnset{
+  display: flex;
+  justify-content: center;
+}
 
 
 
 .Pressbtn{
-  font-size: 0.5rem;
-  background-color: darkgrey;
+  font-size: 3rem;
+  padding: 2% 5%;
+  font-family: 'Do Hyeon', sans-serif;
   width: auto;
-  border-style: solid;
-  border-width: 3.5px;
-  border-left-color: white;
-  border-top-color: white;
-  border-bottom-color: dimgrey;
-  border-right-color: dimgrey;
-  -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
-}
-.Pressbtn{
-  padding: 3% 5%;
+  background: white;
+  border: 1.2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
   text-align:center;
-  font-family: 'Press Start 2P', cursive;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-}
-.Pressbtn:hover{
-  background-color: darkblue;
-  color: white;
-  cursor: pointer;
-}
-.Pressbtn:active{
-  background-color: darkgrey;
-  color: black;
-  border-left-color: dimgrey;
-  border-top-color: dimgrey;
-  border-bottom-color: white;
-  border-right-color: white;
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 
+.Pressbtn:hover {
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.Pressbtn:active {
+  background-color: blue;
+
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
 
 
 
@@ -336,7 +323,12 @@ display: flex;
 
 
 #machinelearning{
+
   display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .finish{
@@ -799,6 +791,7 @@ h3{
   }
 
 .subsBtn{
+  width:5rem;
   margin-top: 0.5rem;
   border:none;
   padding-top: 0.7rem;
@@ -823,12 +816,30 @@ margin-right: 3rem;
 
 .result-message {
   margin-top: 5%;
-  padding-left: 3rem;
+  padding-left: 3%;
   text-align: left;
     font-size: 1.5rem;
 }
 
+.result-message2 {
+  background-color: rgba(230, 230, 230,0.7);
+  border-radius: 30px;
+  margin-top: 5%;
+  margin-bottom: 3.5%;
+  padding-left: 1rem 3rem;
+  text-align: left;
+    font-size: 1.5rem;
+}
 
+.result-message3 {
+  background-color: rgba(230, 230, 230,0.7);
+  border-radius: 30px;
+  margin-top: 5%;
+  margin-bottom: 3.5%;
+  padding-left: 1rem 3rem;
+  text-align: left;
+    font-size: 1.5rem;
+}
 
 .channel-subsPredict{
 	font-size: 1rem;

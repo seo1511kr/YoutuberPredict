@@ -171,13 +171,15 @@
 				</div>
 				<span class="text-center">AI 분석중</span>
 			</div>
-			<div id="label-container" class="d-flex flex-column justify-content-around"></div>
+			<p class="row result-message2"></p>
+			<p class="row result-message3"><div id="label-container" class="d-flex flex-column justify-content-around"></div></p>
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-	
+			<div class="mt-3 addthis_inline_share_toolbox_j4gc"></div>
 			<div class="pt-3 image-title-wrap">
 				<button type="button p-2" onclick="window.location.reload()" class="try-again-btn">
-					다른 사진으로 재시도
+					다시하기
 				</button>
+
 			</div>
 		</div>
 		</div>
@@ -306,10 +308,14 @@
 
 
     <div class="mt-3 pt-5 container file-upload" id='mbti_start'>
-
-		<div class="Pressbtn" onclick="nonespeech('.robot-container'); nonespeech('#mbti_start'); nonespeech('body > nav'); nonespeech('.section');  showspeech('.newbody');">
-			<div class="in_Pressbtn">Test Start!</div>
+	<div class="start-btnset">
+		<div class="Pressbtn" onclick="nonespeech('.robot-container'); nonespeech('#mbti_start'); nonespeech('body > nav'); nonespeech('.section');  showspeech('.newbody'); showspeech('.swiper-container');">
+			<div class="in_Pressbtn">MBTI 버전</div>
 		</div>	
+		<div class="ml-5 Pressbtn" onclick="nonespeech('.robot-container'); nonespeech('#mbti_start'); nonespeech('body > nav'); nonespeech('.section');  showspeech('.newbody'); showspeech('#machinelearning');">
+			<div class="in_Pressbtn">인공지능 버전</div>
+		</div>	
+		</div>
 </div>
 
 
@@ -734,66 +740,66 @@ observeParents: true,
 			switch (prediction[0].className) {
 				case 'vlog':
 					resultTitle = '숨만쉬어도 화제! vlog 유튜버';
-					resultExplain = "철저한 자기관리와 원칙주의적인 당신에게는 면접 유튜버를 추천해 드려요. 남들 앞에 서는 것이 두렵지 않으면서 누가 봐도 똑 부러지는 모습으로 면접에서 굉장히 유리한 성격이에요.  취준생들을 위로해주기보다는 이성적인 해결책을 제시해주는 것에 만족감을 느껴요. 때로는 확실한 호불호를 표현하여 논란을 일으킬 수 있어요.  가끔은 고집을 조금 내려놓는 자세도 필요할 것 같아요.";
+					resultExplain = '날카로운듯 순둥한 눈매와 오똑한 코 그리고 갸름한 얼굴형을 가진 당신!, 능글맞은 눈빛과 타고난 어장관리력은 vlog/일상 장르 안성맞춤. 당신에게 빠진 시청자들은 특별할 것 없는 당신의 일상이 1000만 영화보다 즐거울거에요';
 					resultWarn= '노잼, 뇌절'
 
-					resultCeleb = '관련 유튜버: 피지컬갤러리, 말왕, 심으뜸';
+					resultCeleb = '관련 유튜버: 이유안, 노잼봇, 한예슬';
 					break;
 				case 'tech':
 					resultTitle = '집요한 전문가 테크유튜버';
 					resultExplain =
-						"과묵한 재능꾼인 당신에게는 교육 유튜버를 추천해 드려요. 당신은 어떤 일을 하든 노력보다 효율이 높아요. 간단하고 명료하게 표현하는 능력이 탁월하여 꿀조언을 이해하기 쉽게 전달할 수 있어요. 위로보다는 냉철한 사실을 들이대 꼼짝 못 하게 함으로 배우려는 사람들에게 최고의 선생님이에요. 하지만 때때로 충동적인 성격은 꾸준한 영상 업로드에는 좋지 않아요. 교육 영상은 계속 활용될 수 있으니 조금은 장기적인 플랜을 갖고 접근한다면 큰 도움이 될 거예요. ";
+					"차가운 눈빛과 입체적인 얼굴선은 이성적인 사고방식, 그리고 반전되는 덕후기질을 나타내요. 특정분야에 빠져 몰두하는 성향이 강하고 관심있는 분야를 설명하는 것을 좋아해요.";
 						resultWarn= '막말, 유리멘탈'
 
-						resultCeleb = '관련 유튜버: 개리형, 릴카, 혜안, 우주하마';
+						resultCeleb = '관련 유튜버: 잇섭, 에스오디, 조코딩, 1분과학';
 					break;
 				case 'game':
 					resultTitle = '4차원 히든관종 게임유튜버';
 					resultExplain =
-						"현실적이며 낯가림이 심한 당신에게 시험 준비 유튜버를 추천해 드려요. 집중력과 끈기 하나는 자신 있는 당신이 노력으로 목표를 달성하는 모습은 많은 이들에게 희망이 될 거예요.  효율성을 중시하는 당신에게 새롭게 콘텐츠를 기획하는 것은 사치예요. 당신의 공부 자체가 콘텐츠가 된다는 사실이 만족스러울 거에요. 하지만 종종 시청자들의 질문에 의도치 않은 팩트폭력을 할 수 있어요. 상대방의 감정을 헤아리는 것을 습관화하면 더 좋은 유튜버가 될 수 있을 거예요.";
+					"짧은 하관과 살짝 찢어진 눈매는 연약한 멘탈과 재빠른 눈치를 나타내요. 게임을 하면서 멘탈이 무너지는 모습이 시청자들에게 큰 웃음을 주며, 게임판에서 하나의 밈을 완성시킬 수 있을거에요!";
 						resultWarn= '노잼 x 2'
 
-						resultCeleb = '관련 유튜버: 잇섭, 에스오디, 조코딩, 1분과학';
+						resultCeleb = '관련 유튜버: 개리형, 릴카, 혜안, 우주하마';
 					break;
 				case 'sports':
 					resultTitle = '타고난 의지력 헬스유튜버';
 					resultExplain =
-						'복잡한 건 질색 즉흥적으로 즐기는 당신에게는 버스킹 유튜버를 추천해 드려요.  더 다양한 장소에서 관객에게 자신의 공연을 보여주는 것은 당신에게 큰 즐거움이에요. 타고난 눈치로 관객의 반응에 즉각적으로 대응하는 센스는 감탄스러울 때도 있어요. 말빨도 좋은 편이지만 유머의 수준이 높지는 않아요. 가끔은 논란을 불러일으킬 수 있어서 신중할 필요도 있어요. 겉으로는 항상 밝아 보이지만 의외로 멘탈이 약하니 든든한 동료가 필요해요.';
+					'선명한 이목구비, 살짝 긴듯한 턱선은 강인한 신체와 끈기를 나타내요. 활발한 신체활동을 선호하고 타인을 성장시키는 데에 매력을 느끼신다면 헬스 유튜버를 추천해 드려요. 과도한 끈기는 자칫 고집으로 변할 수 있으니 항상 주의하세요;';
 						resultWarn= '먹뱉, 뒷광고'
 
-						resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
+						resultCeleb = '관련 유튜버: 피지컬갤러리, 말왕, 심으뜸';
 					break;
 				case 'economy': 
-					resultTitle = '예리한 통찰력 리뷰유튜버';
+					resultTitle = '예리한 통찰력 시사/경제유튜버';
 					resultExplain =
-						'활발한 신체활동을 선호하고 타인을 성장시키는 데에 매력을 느끼신다면 헬스 유튜버를 추천해 드려요. 시청자들에게 운동기능을 가르치며 도움을 주는 것은 당신에게 매력적일 거예요. 물론 그 전에 당신부터 건강한 신체기능을 갖춰야 하겠지만요. 그것은 큰 문제는 아니에요. 계획적인 당신에게 식단관리와 꾸준한 운동은 감당할만한 수준이에요. 하지만 운동에는 정답이 없어요. 때로 당신은 독선적인 태도로 편파적인 태도를 보일 수 있어요. 그런 순간에는 당신을 믿고 따르는 구독자들의 말에 귀를 기울여보세요.';
+					'둥그런 얼굴, 졸린듯 날렵한 눈매, 그리고 얇은 입술을 가진 당신!, 침착하고 손익을 따지는 계산에 능해요. 시사/경제 분야에서 당신의 냉정한 비판은 오히려 사이다라는 반응과 함께 시청자들의 호응을 이끌어낼 수 있어요! ';
 						resultWarn= '사생활, 잦은휴방'
 
-						resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
+						resultCeleb = '관련 유튜버: 슈카, 삼프로TV, 김미경TV, 신사임당';
 					break;
 				case 'fashion':
 					resultTitle = '천방지축 트렌드세터 패션/뷰티유튜버';
 					resultExplain =
-						'공감 능력이 뛰어나며, 경청하는 능력이 탁월한 당신에게 고민 상담 유튜버를 추천해 드려요. 당신의 따듯한 위로는 비록 문제를 해결해주지는 못할지라도 지친 마음을 위로하는 데는 최고에요. 가벼운 분위기보다는 진솔함을 선호하는 성향은 시청자들을 감동하게 하기에 충분해요. 하지만 너무나도 이타적인 태도로 가끔 시청자들이 답답함을 느낄 수 있어요. 가끔은 본인을 최우선순위로 생각해보는 것도 좋을 거 같아요.';
+					'깊은 눈동자, 짙은 눈썹, 선명한 턱선을 가진 당신!, 변화를 빠르게 포착하고 뚜렷한 개성을 갖고있어요. 처음에는 당신의 스타일을 거부하던 시청자들도, 어느순간 쇼핑 직전에는 당신의 유튜브를 찾아보게 될거에요';
 						resultWarn= '뒷광고, 막말'
 
-						resultCeleb = '관련 유튜버: 슈카, 삼프로TV, 김미경TV, 신사임당';
+						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
 					break;
 				case 'comedy':
 					resultTitle = '타고난 농락꾼 코미디유튜버';
 					resultExplain =
-						'예술적인 감각이 뛰어나지만 지나치게 조용한 당신에게는 그림 유튜버를 추천해요. 당신에게 낯선 시청자들과의 소통은 스트레스일 수 있어요. 하지만 내가 아닌 나의 창작물에 대한 관심은 은근히 즐거워요. 예술적인 재능은 디자인에 대한 안목으로도 드러나요. 본인의 작업 공간이나 실생활 아이템들이 자기도 모르게 이슈가 될 수 있어요. 하지만  부족한 책임감과 끈기는 큰 성장을 하기에는 장애물이에요. 한 번쯤은 목표를 향해 미친 듯이 몰두해보는 경험도 필요할 거 같아요.';
+					'큰 귀와 진한 눈썹 장난끼 가득해보이는 인상은 다양한 재능과 뛰어난 임기응변을 나타내요. 조금은 개구진 장난도 당신이 한다면 밉지 않아서 코디미유튜버로 적합해요. 하지만 지나치게 자신의 꾀를 믿고 자만하는 경우에는 큰 화를 입을 수 있어요.';
 						resultWarn= '뒷광고, 막말'
 
-						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
+						resultCeleb = '관련 유튜버: 동네놈들, 보물섬, 강유미 ';
 					break;
 					case 'food':
-					resultTitle = '예민한 오감! 맛집탐방 유튜버';
+					resultTitle = '식욕 자극! 음식유튜버';
 					resultExplain =
-						'특유의 드립력과 임기응변은 코미디 유튜버를 할 때 좋은 재능이에요. 당신은 손쉽게 상대방의 특징을 파악하여 유머로 승화시키는 능력이 있어요. 게다가 넘치는 아이디어는 다양한 콘텐츠를 기획하는 데에 딱 맞아요. 다른 어떤 유형보다도 최단 시간에 실버 버튼에 도달할 가능성이 보여요. 하지만 항상 말보다 행동이 앞서는 태도로 최단 시간에 뉴스에 나올 수도 있어요. 그 때문에 팀 단위로 활동하며 자신을 통제하고, 생방송보다는 편집을 활용하면 좋을 거에요.';
+					'짧은 목과, 두툼한 입술은 호탕한 목청, 그리고 왕성한 식욕을 나타내요. 두툼한 입술에 묻은 기름기와 무의식적으로 나오는 호탕한 추임새는 자취생들의 배고픈 밤을 달래주기 충분해요.';
 						resultWarn= '뒷광고, 막말'
 
-						resultCeleb = '관련 유튜버: RISABAE, 짱구대디, 최겨울, 한별 ';
+						resultCeleb = '관련 유튜버: 육식맨, 취요남, 쯔양, 햄지';
 					break;
 		
 				default:
@@ -836,14 +842,14 @@ observeParents: true,
 		var ju_ran=Math.random()
 		var num_posts=Math.floor(ju_ran*100)
 		var subsPred=getPred()
-			var subsPredict = "<div class='row channel-subsPredict pt-2 align-items-center'>" + '구독자:' + subsPred + '만명' + '. 동영상'+num_posts +'개'+ '<div class="pr-1 col d-flex justify-content-end"><input type="button" class="subsBtn" value="구독"></div>'+"</div>";
+			var subsPredict = "<div class='d-flex channel-subsPredict pt-2 justify-content-around align-items-center'>"+'<div class="pr-1">' + '구독자:' + subsPred + '만명' + '. 동영상'+num_posts +'개</div>'+ '<div class="pr-1"><input type="button" class="subsBtn" value="구독"></div>'+"</div>";
 
 			
 
-
 			$('.result-message').html(title + subsPredict);
+			$('.result-message2').html(explain + celeb);
 			var barWidth;
-			for (let i = 0; i < maxPredictions; i++) {
+			for (let i = 0; i < maxPredictions-4; i++) {
 				if (prediction[i].probability.toFixed(2) > 0.1) {
 					barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
 				} else if (prediction[i].probability.toFixed(2) >= 0.01) {
@@ -857,7 +863,7 @@ observeParents: true,
 						labelTitle = '코미디/엔터';
 						break;
 					case 'game':
-						labelTitle = '게임/소통';
+						labelTitle = '게임';
 						break;
 					case 'tech':
 						labelTitle = '테크/기술';
