@@ -13,7 +13,7 @@
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-width: 70%;
+width: 85%;
 max-width: 400px;
 text-align: center;
 }
@@ -221,22 +221,26 @@ display: none;
 
 
 .Pressbtn{
-  font-size: 3rem;
+  font-size: 1.4rem;
   padding: 2% 5%;
   font-family: 'Do Hyeon', sans-serif;
   width: auto;
   background: white;
-  border: 1.2px solid black;
+  border: 1.2px solid rgb(47, 184, 138);
   border-radius: 10px;
-  box-shadow: 0 0 0 black;
   transition: all 0.2s;
   text-align:center;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 
 .Pressbtn:hover {
+  cursor: pointer;
   box-shadow: 0.4rem 0.4rem 0 black;
   transform: translate(-0.4rem, -0.4rem);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .Pressbtn:active {
@@ -244,6 +248,8 @@ display: none;
 
   box-shadow: 0 0 0 black;
   transform: translate(0, 0);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -323,7 +329,7 @@ display: flex;
 
 
 #machinelearning{
-
+  height:90%;
   display: none;
   position: absolute;
   left: 50%;
@@ -546,6 +552,11 @@ h3{
   transition: all .2s ease;
 }
 
+.nav-distance{
+  padding: 2.1% 7.7%;
+}
+
+
 .navbar-light .navbar-brand {
   line-height: 1.68;
   text-align: left;
@@ -583,27 +594,6 @@ h3{
     }
 }
 
-
-.youtube-link {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.youtube-link:hover {
-    font-size: 1.5rem;
-    line-height: 1.71;
-    text-align: center;
-    color: #f73737;
-    text-decoration: underline;
-}
-
-.youtube-icon {
-    width: 30px;
-    height: 27.262px;
-}
 
 .upload {
     width: 20%;
@@ -826,9 +816,9 @@ margin-right: 3rem;
   border-radius: 30px;
   margin-top: 5%;
   margin-bottom: 3.5%;
-  padding-left: 1rem 3rem;
+  padding: 1rem 3rem;
   text-align: left;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .result-message3 {
@@ -861,7 +851,7 @@ margin-right: 3rem;
   font-family: 'Cute Font', cursive;
           line-height: 1.4;
   font-weight: 500;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 .ESTP-channel-category {
     color: rgba(184, 88, 44,0.87);
@@ -1091,7 +1081,7 @@ font-size: 1rem;
 }
 
 .result-page img{
-  width: 50%;
+  width: 40%;
   max-width: 400px;
 
 }
