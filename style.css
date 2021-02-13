@@ -1,10 +1,13 @@
+
 .result-page{
+  margin: 0%;
   display: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.1rem;
+  font-weight: lighter;
   padding: 1.3rem 2rem;
 
   border: 2px solid black;
@@ -12,9 +15,9 @@
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
 width: 50%;
+max-width: 400px;
 text-align: center;
 }
-
 
 
 .robot-container{
@@ -122,7 +125,7 @@ html,body{
     font-family:inherit;
   font-size: 1.2rem;
   background: white;
-  padding: 2% 2% 2% 5%;
+  padding: 2% 2% 0% 5%;
   border: 1.2px solid black;
   border-radius: 10px;
   box-shadow: 0 0 0 black;
@@ -132,7 +135,7 @@ html,body{
 
 
 .radio{
-  display: none;
+  
 }
 
 
@@ -826,7 +829,17 @@ margin-right: 3rem;
 }
 
 
+.related-celeb{
+  margin-top: 2%;
+  color: rgba(45, 123, 168, 0.87);
+  font-size: 1rem;
+}
+
+
 .channel-explain {
+  font-family: 'Gaegu', cursive;
+  font-family: 'Hi Melody', cursive;
+  line-height: 1.5;
     font-size: 1rem;
 }
 .ESTP-channel-category {
@@ -1058,6 +1071,8 @@ font-size: 1rem;
 
 .result-page img{
   width: 50%;
+  max-width: 400px;
+
 }
 
 
