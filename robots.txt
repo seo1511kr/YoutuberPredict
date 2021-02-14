@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
-
+Allow:/
 Sitemap: https://focused-knuth-7ddfc1.netlify.app/sitemap.xml
