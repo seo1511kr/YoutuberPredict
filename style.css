@@ -10,12 +10,9 @@
 
 
 .result-page{
-  margin-top: 6%;
+  margin: 4% auto;
   display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
   font-size: 1.4rem;
   padding: 1.3rem 2rem;
 
