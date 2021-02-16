@@ -40,7 +40,9 @@ html,body{
   height: 100%;
   margin:0;
 }
-.newbody{  box-sizing: border-box;
+.newbody{  
+  padding-bottom: 5%;
+  box-sizing: border-box;
   color: #35465d;
   height: auto;
   display: none;
@@ -88,10 +90,7 @@ html,body{
 
 .swiper-container {
   display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 5%;
   font-size: 1rem;
   padding: 1.3rem 2rem;
 
