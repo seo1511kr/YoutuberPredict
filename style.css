@@ -42,7 +42,7 @@ html,body{
 }
 .newbody{  box-sizing: border-box;
   color: #35465d;
-  height: 110%;
+  height: auto;
   display: none;
   color:black;
   font-family: 'Do Hyeon', sans-serif;
